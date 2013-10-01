@@ -1,0 +1,13 @@
+addi $t0,$zero,0
+beq $s0,$to,Caso0
+addi $t0,$zero,1
+beq $s0,$to,Caso1
+addi $t0,$zero,1
+beq $s0,$to,Caso2
+Caso0: addi $s1,$zero,2
+j Exit
+Caso1: srl $s1,$s1,1
+j Exit
+Caso2: sll $s1,$s1,1
+j Exit
+Exit:halt

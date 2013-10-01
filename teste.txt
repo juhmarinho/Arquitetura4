@@ -1,0 +1,5 @@
+add $v0,$t1,$t2
+sub $v0,$t1,$t2
+addi $v0,$t1,6
+lbl: add $v0,$t1,$t2
+halt

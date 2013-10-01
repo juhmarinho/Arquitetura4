@@ -1,0 +1,15 @@
+addi $v1,$zero, 0
+addi $t0,$zero,0
+addi $t1,$zero,1
+L2: lw $t2,0($so)
+slt $t3,$t0,$t2
+beq $t3,$t1,L1
+addi $a0,$a0,4
+addi $s1,$s1,1
+j L2
+L1: addi $v0,$zero,$t2
+add $v1,$s1,$zero
+addi $s1,$s1,1
+add $t1,$zero,$t2
+addi $a0,$a0,4
+j L2

@@ -1,0 +1,7 @@
+addi $s0,$zero,0
+addi $t0,$zero,10
+Loop: sw $t0,0($s2)
+bne $s0,$t0, Exit
+add $t0,$t0,$s1
+j Loop
+Exit:

@@ -1,0 +1,7 @@
+main:addi $s0,$zero,2
+addi $s2,$zero,10
+addi $s3,$zero,10
+label:addi $s3,$s3,-1
+addi $s0,$s0,1
+bne $s0,$s2,label
+halt

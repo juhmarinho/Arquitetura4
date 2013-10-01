@@ -1,0 +1,5 @@
+Loop: slt $t0,$s0,$zero
+bne $t0,$zero,Exit
+addi $s0,$s0,-1
+j Loop
+Exit:
